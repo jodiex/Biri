@@ -63,7 +63,7 @@ def response(voice_input):
 def speak(voice_input):
     print(voice_input)
     tts = gTTS(text=voice_input, lang='en')
-    r = random.randint(1, 100000);
+    r = random.randint(1, 10000);
     audio_file = 'audio-' + str(r) + '.mp3'
     tts.save(audio_file)
     playsound.playsound(audio_file)
